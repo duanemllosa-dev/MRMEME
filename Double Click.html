@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FREE ROBUX GIVEAWAY</title>
+<style>
+    body {
+        background: black;
+        color: white;
+        font-family: Georgia, serif;
+        text-align: left;
+    }
+
+    .title {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 20px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+        margin: 20px;
+    }
+
+    #captchaBox {
+        width: 90%;
+        height: 200px;
+        background: #e6e6e6;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        cursor: pointer;
+        margin: 20px auto;
+        user-select: none;
+    }
+
+    #video {
+        display: none;
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+    }
+</style>
+
+<script>
+function showVideo() {
+    const box = document.getElementById("captchaBox");
+    const video = document.getElementById("video");
+
+    box.style.display = "none";
+    video.style.display = "block";
+
+    // Autoplay YouTube video
+    video.src += "&autoplay=1";
+}
+</script>
+</head>
+
+<body>
+
+<div class="title">FREE ROBUX GIVEAWAY</div>
+<div class="subtitle">Please complete captcha below.</div>
+
+<div id="captchaBox" ondblclick="showVideo()">
+    DOUBLE CLICK ME
+</div>
+
+<iframe id="video" 
+    width="560" 
+    height="315"
+    src="https://www.youtube.com/embed/L8XbI9aJOXk?si=xHVDRQl8Ws7ZuK-d"
+    title="YouTube video player"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+</iframe>
+
+</body>
+</html>
